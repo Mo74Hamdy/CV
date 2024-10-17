@@ -5,50 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Hamdy Ay'yad - CV</title>
     <style>
+        /* تنسيق خلفية الصفحة والخط الأساسي */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
+        /* تنسيق الإطار الرئيسي */
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
+            margin: 30px auto;
+            background: #ffffff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        h1, h2, h3 {
-            color: #333;
-        }
+        /* تنسيق العناوين */
         h1 {
-            border-bottom: 2px solid #333;
+            color: #2c3e50;
+            font-size: 2.2em;
+            border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
         }
+        h2 {
+            color: #3498db;
+            font-size: 1.8em;
+            margin-top: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #34495e;
+            font-size: 1.4em;
+            margin: 15px 0 5px;
+        }
+        /* تنسيق المعلومات الشخصية */
         .contact-info {
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         .contact-info p {
             margin: 5px 0;
+            font-size: 1em;
         }
+        /* تنسيق الأقسام */
         section {
             margin-bottom: 20px;
         }
         ul {
-            list-style-type: disc;
+            list-style-type: square;
             margin-left: 20px;
         }
+        /* تنسيق عناصر المهارات، اللغات، والهوايات */
         .skills, .languages, .hobbies {
             display: flex;
             flex-wrap: wrap;
+            gap: 10px;
         }
         .skills div, .languages div, .hobbies div {
-            margin-right: 15px;
-            background: #eee;
-            padding: 5px 10px;
-            margin-bottom: 5px;
-            border-radius: 5px;
+            background: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        /* تنسيق الروابط */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -58,7 +92,7 @@
 
         <div class="contact-info">
             <p><strong>Phone:</strong> +965 - 66684355</p>
-            <p><strong>Email:</strong> Mo22hamdy@gmail.com</p>
+            <p><strong>Email:</strong> <a href="mailto:Mo22hamdy@gmail.com">Mo22hamdy@gmail.com</a></p>
             <p><strong>Address:</strong> Block 2, Musa Bin Nusayr Street, Hawally, Kuwait</p>
         </div>
 
