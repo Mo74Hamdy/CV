@@ -18,10 +18,19 @@
         .container {
             max-width: 800px;
             margin: 30px auto;
-            background: #ffffff;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* تنسيق القوالب */
+        .card {
+            background: #ffffff;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         /* تنسيق العناوين */
         h1 {
@@ -33,7 +42,7 @@
         h2 {
             color: #3498db;
             font-size: 1.8em;
-            margin-top: 20px;
+            margin-top: 0;
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
         }
@@ -44,19 +53,10 @@
         }
         /* تنسيق المعلومات الشخصية */
         .contact-info {
-            background: #f7f7f7;
-            padding: 10px;
-            border-radius: 5px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         .contact-info p {
             margin: 5px 0;
-            font-size: 1em;
-        }
-        /* تنسيق الأقسام */
-        section {
-            margin-bottom: 20px;
         }
         ul {
             list-style-type: square;
@@ -76,39 +76,31 @@
             color: #555;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-        /* تنسيق الروابط */
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Mohammad Hamdy Ay'yad - IT Engineer</h1>
 
-        <div class="contact-info">
+        <div class="card contact-info">
+            <h2>Contact Information</h2>
             <p><strong>Phone:</strong> +965 - 66684355</p>
             <p><strong>Email:</strong> <a href="mailto:Mo22hamdy@gmail.com">Mo22hamdy@gmail.com</a></p>
             <p><strong>Address:</strong> Block 2, Musa Bin Nusayr Street, Hawally, Kuwait</p>
         </div>
 
-        <section>
+        <div class="card">
             <h2>Objective</h2>
             <p>Detail-oriented and highly skilled IT professional with extensive experience in data analysis and IT support. Proven ability to lead teams, develop systems, and enhance productivity through innovative solutions.</p>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Work Experience</h2>
             <h3>System Developer & Trainer in IT Department | Farwaniya Hospital - "Bishara Group" Kuwait | January 2023</h3>
             <ul>
                 <li>Trained employees on new systems.</li>
                 <li>Improved technical knowledge level among employees by 30%.</li>
             </ul>
-            
             <h3>HR Department Developer | Farwaniya Hospital - "Bishara Group" Kuwait | May 2021 - December 2022</h3>
             <ul>
                 <li>Developed and improved HR systems.</li>
@@ -117,27 +109,24 @@
                 <li>Programmed a simple and user-friendly system for the department.</li>
                 <li>Increased department efficiency by 50%.</li>
             </ul>
-            
             <h3>Team Leader | Jaber Al-Ahmad Al-Sabah Hospital - "Bishara Group" Kuwait | 2020 - May 2021</h3>
             <ul>
                 <li>Led the technical support team and assigned tasks.</li>
                 <li>Enhanced team efficiency and increased productivity by 20%.</li>
             </ul>
-            
             <h3>Technical Support | Jaber Al-Ahmad Al-Sabah Hospital - "Bishara Group" Kuwait | 2019 - 2020</h3>
             <ul>
                 <li>Provided technical support to staff and users.</li>
                 <li>Successfully resolved network connectivity issues 95% of the time.</li>
             </ul>
-            
             <h3>Data Entry | Jaber Al-Ahmad Al-Sabah Hospital - "Bishara Group" Kuwait | October 2018 - 2019</h3>
             <ul>
                 <li>Accurately and efficiently entered patient and visitor data.</li>
                 <li>Improved data entry quality and reduced errors by 15%.</li>
             </ul>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Technical Skills</h2>
             <div class="skills">
                 <div>Microsoft Office</div>
@@ -150,17 +139,17 @@
                 <div>Network Troubleshooting</div>
                 <div>Technical Documentation</div>
             </div>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Education</h2>
             <h3>Bachelor's in Information Technology & Computing (ITC)</h3>
             <p>Arab Open University - Kuwait Branch | 2015 - 2021</p>
             <h3>Diploma in Secretarial and Administration</h3>
             <p>Public Authority for Applied Education and Training (PAAET) Kuwait | 2016 - 2018</p>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Skill Highlights</h2>
             <div class="skills">
                 <div>IT Support</div>
@@ -174,24 +163,24 @@
                 <div>Data Analysis</div>
                 <div>System Development</div>
             </div>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Languages</h2>
             <div class="languages">
                 <div>Arabic - Native</div>
                 <div>English - Good</div>
             </div>
-        </section>
+        </div>
 
-        <section>
+        <div class="card">
             <h2>Hobbies</h2>
             <div class="hobbies">
                 <div>Data Analysis</div>
                 <div>Football Data Analysis</div>
                 <div>Playing Football</div>
             </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>
