@@ -8,12 +8,12 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* اجعل المحتوى يبدأ من الأعلى */
-            min-height: 100vh; /* لضمان أن المحتوى يمكن أن ينمو عموديًا */
+            align-items: flex-start;
+            min-height: 100vh;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 40px 20px; /* أضف مسافة حول المحتوى */
-            box-sizing: border-box; /* لضمان أن padding يُحسب ضمن العرض */
+            padding: 40px 20px;
+            box-sizing: border-box;
         }
 
         .container {
@@ -22,8 +22,8 @@
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px; /* مسافة داخلية للمحتوى */
-            box-sizing: border-box; /* تأكد من أن المسافة الداخلية تُحسب ضمن العرض */
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .card {
@@ -91,26 +91,16 @@
     <div class="container">
         <h1>Mohammad Hamdy Ay'yad - IT Engineer</h1>
 
+        <div class="card">
+            <h2>Objective</h2>
+            <p>Detail-oriented and highly skilled IT professional with extensive experience in data analysis and IT support. Proven ability to lead teams, develop systems, and enhance productivity through innovative solutions.</p>
+        </div>
+
         <div class="card contact-info">
             <h2>Contact Information</h2>
             <p><strong>Phone:</strong> +965 - 66684355</p>
             <p><strong>Email:</strong> <a href="mailto:Mo22hamdy@gmail.com">Mo22hamdy@gmail.com</a></p>
             <p><strong>Address:</strong> Block 2, Musa Bin Nusayr Street, Hawally, Kuwait</p>
-        </div>
-
-        <div class="card personal-info">
-            <h2>Personal Information</h2>
-            <p><strong>Date of Birth:</strong> 16.5.1997</p>
-            <p><strong>Nationality:</strong> Egyptian</p>
-            <p><strong>Country of Residence:</strong> Kuwait</p>
-            <p><strong>Type of Residence:</strong> Transferable</p>
-            <p><strong>Driving License:</strong> Yes</p>
-            <p><strong>Marital Status:</strong> Single</p>
-        </div>
-
-        <div class="card">
-            <h2>Objective</h2>
-            <p>Detail-oriented and highly skilled IT professional with extensive experience in data analysis and IT support. Proven ability to lead teams, develop systems, and enhance productivity through innovative solutions.</p>
         </div>
 
         <div class="card">
@@ -146,13 +136,11 @@
         </div>
 
         <div class="card">
-            <h2>Programming Languages</h2>
-            <div class="programming-languages">
-                <button>Python</button>
-                <button>Java</button>
-                <button>SQL</button>
-                <button>Basic Programming</button>
-            </div>
+            <h2>Education</h2>
+            <h3>Bachelor's in Information Technology & Computing (ITC)</h3>
+            <p>Arab Open University - Kuwait Branch | 2015 - 2021</p>
+            <h3>Diploma in Secretarial and Administration</h3>
+            <p>Public Authority for Applied Education and Training (PAAET) Kuwait | 2016 - 2018</p>
         </div>
 
         <div class="card">
@@ -164,14 +152,6 @@
                 <button>Network Troubleshooting</button>
                 <button>Technical Documentation</button>
             </div>
-        </div>
-
-        <div class="card">
-            <h2>Education</h2>
-            <h3>Bachelor's in Information Technology & Computing (ITC)</h3>
-            <p>Arab Open University - Kuwait Branch | 2015 - 2021</p>
-            <h3>Diploma in Secretarial and Administration</h3>
-            <p>Public Authority for Applied Education and Training (PAAET) Kuwait | 2016 - 2018</p>
         </div>
 
         <div class="card">
@@ -199,12 +179,32 @@
         </div>
 
         <div class="card">
+            <h2>Programming Languages</h2>
+            <div class="programming-languages">
+                <button>Python</button>
+                <button>Java</button>
+                <button>SQL</button>
+                <button>Basic Programming</button>
+            </div>
+        </div>
+
+        <div class="card">
             <h2>Hobbies</h2>
             <div class="hobbies">
                 <div>Data Analysis</div>
                 <div>Football Data Analysis</div>
                 <div>Playing Football</div>
             </div>
+        </div>
+
+        <div class="card personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Date of Birth:</strong> 16.5.1997</p>
+            <p><strong>Nationality:</strong> Egyptian</p>
+            <p><strong>Country of Residence:</strong> Kuwait</p>
+            <p><strong>Type of Residence:</strong> Transferable</p>
+            <p><strong>Driving License:</strong> Yes</p>
+            <p><strong>Marital Status:</strong> Single</p>
         </div>
     </div>
 </body>
