@@ -8,20 +8,22 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* اجعل المحتوى يبدأ من الأعلى */
+            min-height: 100vh; /* لضمان أن المحتوى يمكن أن ينمو عموديًا */
             background-color: #f4f4f4;
             margin: 0;
+            padding: 40px 20px; /* أضف مسافة حول المحتوى */
+            box-sizing: border-box; /* لضمان أن padding يُحسب ضمن العرض */
         }
 
         .container {
             max-width: 800px;
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
+            width: 100%;
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px; /* مسافة داخلية للمحتوى */
+            box-sizing: border-box; /* تأكد من أن المسافة الداخلية تُحسب ضمن العرض */
         }
 
         .card {
@@ -60,10 +62,6 @@
 
         p {
             margin: 5px 0;
-        }
-
-        .contact-info, .personal-info {
-            margin-bottom: 20px;
         }
 
         .skills, .languages, .hobbies, .programming-languages {
