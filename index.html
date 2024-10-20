@@ -64,7 +64,7 @@
             margin: 5px 0;
         }
 
-        .skills, .languages, .hobbies, .programming-languages {
+        .skills, .programming-languages {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -84,6 +84,15 @@
 
         .skills button:hover, .programming-languages button:hover {
             background-color: #2980b9;
+        }
+
+        .languages ul, .hobbies ul {
+            list-style-: disc;
+            padding-left: 20px;
+        }
+
+        .languages li, .hobbies li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -172,10 +181,10 @@
 
         <div class="card">
             <h2>Languages</h2>
-            <div class="languages">
-                <div>Arabic - Native</div>
-                <div>English - Good</div>
-            </div>
+            <ul class="languages">
+                <li>Arabic - Native</li>
+                <li>English - Good</li>
+            </ul>
         </div>
 
         <div class="card">
@@ -190,11 +199,11 @@
 
         <div class="card">
             <h2>Hobbies</h2>
-            <div class="hobbies">
-                <div>Data Analysis</div>
-                <div>Football Data Analysis</div>
-                <div>Playing Football</div>
-            </div>
+            <ul class="hobbies">
+                <li>Data Analysis</li>
+                <li>Football Data Analysis</li>
+                <li>Playing Football</li>
+            </ul>
         </div>
 
         <div class="card personal-info">
@@ -202,8 +211,8 @@
             <p><strong>Date of Birth:</strong> 16.5.1997</p>
             <p><strong>Nationality:</strong> Egyptian</p>
             <p><strong>Country of Residence:</strong> Kuwait</p>
-            <p><strong>Type of Residence:</strong> Transferable</p>
-            <p><strong>Driving License:</strong> Yes</p>
+            <p><strong>Type of Visa:</strong> Transferable</p>
+            <p><strong>Driving License:</strong> Avilable</p>
             <p><strong>Marital Status:</strong> Single</p>
         </div>
     </div>
