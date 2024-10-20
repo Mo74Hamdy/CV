@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Hamdy Ay'yad - CV</title>
     <style>
-        /* تنسيق خلفية الصفحة والخط الأساسي */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
         }
-        /* تنسيق الإطار الرئيسي */
+
         .container {
             max-width: 800px;
-            margin: 30px auto;
+            width: 90%;
+            margin: 0 auto;
             padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        /* تنسيق القوالب */
+
         .card {
             background: #ffffff;
             border-radius: 10px;
@@ -29,16 +32,18 @@
             padding: 20px;
             transition: transform 0.2s ease;
         }
+
         .card:hover {
             transform: translateY(-5px);
         }
-        /* تنسيق العناوين */
+
         h1 {
             color: #2c3e50;
             font-size: 2.2em;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
         }
+
         h2 {
             color: #3498db;
             font-size: 1.8em;
@@ -46,35 +51,41 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
         }
+
         h3 {
             color: #34495e;
             font-size: 1.4em;
             margin: 15px 0 5px;
         }
-        /* تنسيق المعلومات الشخصية */
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
+
+        p {
             margin: 5px 0;
         }
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
+
+        .contact-info, .personal-info {
+            margin-bottom: 20px;
         }
-        /* تنسيق عناصر المهارات، اللغات، والهوايات */
-        .skills, .languages, .hobbies {
+
+        .skills, .languages, .hobbies, .programming-languages {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            margin-top: 10px;
         }
-        .skills div, .languages div, .hobbies div {
-            background: #e9ecef;
-            padding: 8px 12px;
-            border-radius: 20px;
+
+        .skills button, .programming-languages button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
             font-size: 0.9em;
-            color: #555;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .skills button:hover, .programming-languages button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
@@ -87,6 +98,16 @@
             <p><strong>Phone:</strong> +965 - 66684355</p>
             <p><strong>Email:</strong> <a href="mailto:Mo22hamdy@gmail.com">Mo22hamdy@gmail.com</a></p>
             <p><strong>Address:</strong> Block 2, Musa Bin Nusayr Street, Hawally, Kuwait</p>
+        </div>
+
+        <div class="card personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Date of Birth:</strong> 16.5.1997</p>
+            <p><strong>Nationality:</strong> Egyptian</p>
+            <p><strong>Country of Residence:</strong> Kuwait</p>
+            <p><strong>Type of Residence:</strong> Transferable</p>
+            <p><strong>Driving License:</strong> Yes</p>
+            <p><strong>Marital Status:</strong> Single</p>
         </div>
 
         <div class="card">
@@ -127,17 +148,23 @@
         </div>
 
         <div class="card">
+            <h2>Programming Languages</h2>
+            <div class="programming-languages">
+                <button>Python</button>
+                <button>Java</button>
+                <button>SQL</button>
+                <button>Basic Programming</button>
+            </div>
+        </div>
+
+        <div class="card">
             <h2>Technical Skills</h2>
             <div class="skills">
-                <div>Microsoft Office</div>
-                <div>Photoshop</div>
-                <div>Camtasia Studio</div>
-                <div>Python</div>
-                <div>Java</div>
-                <div>SQL</div>
-                <div>Basic Programming</div>
-                <div>Network Troubleshooting</div>
-                <div>Technical Documentation</div>
+                <button>Microsoft Office</button>
+                <button>Photoshop</button>
+                <button>Camtasia Studio</button>
+                <button>Network Troubleshooting</button>
+                <button>Technical Documentation</button>
             </div>
         </div>
 
@@ -152,16 +179,16 @@
         <div class="card">
             <h2>Skill Highlights</h2>
             <div class="skills">
-                <div>IT Support</div>
-                <div>Strong Decision-Maker</div>
-                <div>Complex Problem Solver</div>
-                <div>Team Leadership</div>
-                <div>Creative Design</div>
-                <div>IT Troubleshooting</div>
-                <div>Service-Focused</div>
-                <div>End-User Training</div>
-                <div>Data Analysis</div>
-                <div>System Development</div>
+                <button>IT Support</button>
+                <button>Strong Decision-Maker</button>
+                <button>Complex Problem Solver</button>
+                <button>Team Leadership</button>
+                <button>Creative Design</button>
+                <button>IT Troubleshooting</button>
+                <button>Service-Focused</button>
+                <button>End-User Training</button>
+                <button>Data Analysis</button>
+                <button>System Development</button>
             </div>
         </div>
 
